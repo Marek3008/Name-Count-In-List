@@ -6,7 +6,7 @@ int main() {
 
 	string word[] = { "marek", "marek", "peter", "adam", "adam", "adam" };
 	string input;
-	int size = *(&word + 1) - word;
+	int size = sizeof(word) / sizeof(string);
 	int countName = 0;
 	
 	cout << "ake meno chces spocitat? ";
